@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f8fa">
+  <meta name="description" content="Simple lessons and practical tools to help you make safer choices online.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <title>Sameet Safety Lab — Cyber safety, made simple</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="learning.css">
+</head>
+<body>
+  <div class="notice"><span class="notice-dot"></span> Stay alert <span class="notice-separator">·</span> Verify unexpected requests</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Sameet Safety Lab home"><span class="brand-mark" aria-hidden="true">⌬</span><span><strong>SAMEET</strong> SAFETY LAB</span></a>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#learn">Learn</a><a href="#practice">Practice</a><a href="#lessons">Lessons</a>
+      <a class="nav-quick" href="#quick-help">Quick help <span aria-hidden="true">↗</span></a>
+    </nav>
+    <a class="header-cta" href="#learn">Start learning <span aria-hidden="true">↗</span></a>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Switch to dark theme"><span class="theme-icon" aria-hidden="true">☾</span><span class="theme-label">Dark</span></button>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse-dot"></span> CYBER SAFETY, MADE SIMPLE</p>
+        <h1 class="typewriter-heading" aria-label="A safer digital life starts with one small step."><span class="typed-prefix" aria-hidden="true"></span><em class="typed-accent" aria-hidden="true"></em><span class="type-caret" aria-hidden="true"></span></h1>
+        <p class="hero-lede">Clear lessons and practical tools to help you make safer choices online.</p>
+        <div class="hero-actions"><a class="button button-bright" href="#lessons">Explore lessons <span aria-hidden="true">→</span></a><a class="button button-outline" href="#quick-help"><span class="lifebuoy" aria-hidden="true">✳</span> Get quick help</a></div>
+        <div class="hero-stats" aria-label="Site overview"><div><span class="stat-icon">▤</span><span><b data-topic-count>79</b><small>Learning topics</small></span></div><div><span class="stat-icon">⌁</span><span><b>8+</b><small>Safety tools</small></span></div><div><span class="stat-icon">◷</span><span><b>At your pace</b><small>Learn when ready</small></span></div></div>
+      </div>
+    </section>
+
+    <section class="learning wrap" id="learn" aria-labelledby="learn-title">
+  <div class="section-heading learn-heading"><div><p class="eyebrow eyebrow-dark">SAMEET SAFETY LAB ACADEMY</p><h2 id="learn-title">Choose what you want to learn.</h2><p class="section-intro">Short, practical lessons in everyday language. Start anywhere and learn at your own pace.</p></div></div>
+  <div class="learning-progress">
+    <div class="progress-copy"><span class="progress-symbol" aria-hidden="true">✓</span><div><strong>Learning progress</strong><small id="progress-copy">0 of 79 topics completed</small></div></div>
+    <div class="progress-bar" id="overall-progress" role="progressbar" aria-label="Overall learning progress" aria-valuemin="0" aria-valuemax="79" aria-valuenow="0"><span id="overall-progress-fill"></span></div>
+    <strong class="progress-percent" id="progress-percent">0%</strong>
+  </div>
+  <div class="hub-controls">
+    <label class="topic-search"><span aria-hidden="true">⌕</span><input id="topic-search" type="search" placeholder="Search topics, descriptions, or keywords…" autocomplete="off" aria-label="Search cybersecurity topics"></label>
+    <div class="filter-chips" role="group" aria-label="Filter topics by category">
+      <button type="button" class="filter-chip is-active" data-filter="All" aria-pressed="true">All</button><button type="button" class="filter-chip" data-filter="Computer &amp; Laptop" aria-pressed="false">Computer &amp; Laptop</button><button type="button" class="filter-chip" data-filter="Mobile" aria-pressed="false">Mobile</button><button type="button" class="filter-chip" data-filter="Wi-Fi &amp; Internet" aria-pressed="false">Wi-Fi &amp; Internet</button><button type="button" class="filter-chip" data-filter="CCTV" aria-pressed="false">CCTV</button><button type="button" class="filter-chip" data-filter="Accounts" aria-pressed="false">Accounts</button><button type="button" class="filter-chip" data-filter="Scams" aria-pressed="false">Scams</button><button type="button" class="filter-chip" data-filter="Threats" aria-pressed="false">Threats</button><button type="button" class="filter-chip" data-filter="Privacy" aria-pressed="false">Privacy</button><button type="button" class="filter-chip" data-filter="Social &amp; Communication" aria-pressed="false">Social &amp; Communication</button><button type="button" class="filter-chip" data-filter="Connectivity &amp; Smart Technology" aria-pressed="false">Connectivity &amp; Smart Technology</button>
+    </div>
+  </div>
+  <p id="topic-results" class="topic-results" aria-live="polite">Showing 12 learning topics</p><div class="topic-grid" id="topic-grid" aria-live="polite"></div>
+</section>
+
+    <section class="practice wrap" id="practice" aria-labelledby="practice-title">
+      <div class="practice-copy"><p class="eyebrow eyebrow-dark">🧪 PRACTICAL LAB</p><h2 id="practice-title">PRACTICAL LAB</h2><p>Test what you learned in realistic situations.</p><p class="scenario-note">Choose a topic, decide what you would do, and learn from each explanation. No score—just practice.</p><div id="practice-topics" class="practice-topics" aria-label="Choose a practical lab topic"></div></div>
+      <div class="practice-aside"><span class="aside-number">LEARN <i>→</i> PRACTICE</span><span class="aside-icon" aria-hidden="true">⌁</span><p>Build confidence one safe decision at a time.</p><a href="#learn">Explore the lessons <span aria-hidden="true">↗</span></a></div>
+      <div id="practice-player" class="practice-player" hidden aria-live="polite">
+        <div class="practice-player-head"><div><p class="eyebrow eyebrow-dark">PRACTICAL LAB</p><h3 id="practice-topic-title"></h3></div><span id="practice-step"></span></div>
+        <div id="practice-scene" class="practice-scene"></div>
+        <div class="practice-player-actions"><button id="practice-back" class="choice choice-quiet" type="button">← Back to topics</button><button id="practice-restart" class="choice choice-quiet" type="button">↻ Restart topic</button><button id="practice-return-lesson" class="choice choice-quiet" type="button" hidden>Continue to lesson quiz →</button><button id="practice-next" class="choice choice-safe" type="button" disabled>Next scenario →</button></div>
+      </div>
+    </section>
+
+    <section class="lessons wrap" id="lessons" aria-labelledby="recommended-title">
+  <div class="section-heading"><div><p class="eyebrow eyebrow-dark">A GOOD PLACE TO BEGIN</p><h2 id="recommended-title">Recommended first lessons.</h2></div><a class="text-link" href="#learn">Browse all topics <span aria-hidden="true">→</span></a></div>
+  <div class="lesson-grid recommended-grid">
+    <button class="lesson-card lesson-card-button" type="button" data-open-lesson="phishing"><span class="lesson-icon lesson-red" aria-hidden="true">✉</span><span class="lesson-body"><b>Spot a fake message</b><small>Explore links, pressure tactics, and safe verification.</small><span class="lesson-meta">◷ &nbsp;9 min <span>Open lesson →</span></span></span></button>
+    <button class="lesson-card lesson-card-button" type="button" data-open-lesson="passwords"><span class="lesson-icon lesson-green" aria-hidden="true">▣</span><span class="lesson-body"><b>Protect your accounts</b><small>Learn about passwords, passkeys, and safer sign-in.</small><span class="lesson-meta">◷ &nbsp;6 min <span>Open lesson →</span></span></span></button>
+    <button class="lesson-card lesson-card-button" type="button" data-open-lesson="wifi"><span class="lesson-icon lesson-blue" aria-hidden="true">⌁</span><span class="lesson-body"><b>Stay safer on public Wi-Fi</b><small>Know what to check on shared networks.</small><span class="lesson-meta">◷ &nbsp;5 min <span>Open lesson →</span></span></span></button>
+  </div>
+</section>
+
+    <div class="support-resources wrap">
+      <section class="more-notes-promo" aria-labelledby="more-notes-title"><div><p class="eyebrow eyebrow-dark">OPTIONAL DEEPER STUDY</p><h2 id="more-notes-title">📚 More Notes</h2><p>Go deeper with detailed notes, examples, diagrams and revision material.</p></div><span class="notes-coming-soon">Detailed notes coming soon</span></section>
+      <section class="quick-help" id="quick-help"><div><p class="eyebrow">NEED A QUICK ANSWER?</p><h2>Start with what happened.</h2><p>Choose a situation to find a matching beginner lesson.</p></div><div class="help-tags"><a href="#learn" data-open-lesson="phishing">I got a suspicious message <span>→ Phishing</span></a><a href="#learn" data-open-lesson="passwords">I want to secure an account <span>→ Passwords &amp; passkeys</span></a><a href="#learn" data-open-lesson="mobile">I lost my phone <span>→ Mobile security</span></a></div></section>
+    </div>
+<dialog class="lesson-dialog" id="lesson-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-intro">
+  <div class="lesson-shell">
+    <header class="lesson-toolbar">
+      <div class="lesson-toolbar-links"><button class="dialog-back" id="back-to-hub" type="button">← All topics</button><a class="dialog-home" href="#home" id="dialog-home-link">Home</a></div>
+      <div class="lesson-search-wrap" id="lesson-search-wrap"><label class="lesson-search"><span aria-hidden="true">⌕</span><input id="lesson-search" type="search" placeholder="Search lessons…" autocomplete="off" aria-label="Search lessons" aria-controls="lesson-search-results" aria-expanded="false"></label><div class="lesson-search-results" id="lesson-search-results" role="listbox" aria-label="Matching lessons" hidden></div></div>
+      <div class="lesson-track"><span id="lesson-position">Lesson 1 of 12</span><span class="lesson-track-bar"><span id="lesson-track-fill"></span></span></div>
+      <button class="dialog-close" id="close-lesson" type="button" aria-label="Close lesson">×</button>
+    </header>
+    <div class="lesson-modal-body">
+      <aside class="lesson-sidebar"><p class="eyebrow eyebrow-dark" id="dialog-meta">BEGINNER · 9 MIN</p><h2 id="dialog-title"></h2><p id="dialog-intro" class="dialog-intro"></p><nav id="lesson-toc" class="lesson-toc" aria-label="Lesson sections"></nav><div class="sidebar-progress"><span id="sidebar-progress-text">Your progress</span><div class="progress-bar"><span id="sidebar-progress-fill"></span></div></div></aside>
+      <article class="lesson-content" id="lesson-content" tabindex="-1"></article>
+    </div>
+    <footer class="lesson-footer"><button type="button" class="lesson-step-button" id="previous-lesson">← Previous lesson</button><p id="save-note" aria-live="polite">Progress saves on this device.</p><button type="button" class="lesson-step-button lesson-step-next" id="next-lesson">Next lesson →</button></footer>
+  </div>
+</dialog>
+  </main>
+  <footer class="site-footer wrap"><a class="brand brand-footer" href="#home"><span class="brand-mark" aria-hidden="true">⌬</span><span><strong>SAMEET</strong> SAFETY LAB</span></a><p>Stay secure. Stay aware. Take it one step at a time.</p><a href="#home">Back to top ↑</a></footer>
+  <script src="data/lessons.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
